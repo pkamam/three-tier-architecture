@@ -1,6 +1,8 @@
 # three-tier-architecture
 Create 3 tier architecture for my learning
 
+Reference: https://medium.com/@aaloktrivedi/building-a-3-tier-web-application-architecture-with-aws-eb5981613e30
+
 This base network consists of:
 
 A VPC.
