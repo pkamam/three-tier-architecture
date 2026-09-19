@@ -39,10 +39,8 @@ module "web_asg" {
   )
 
   # Connect ASG to ALB target group
-  traffic_source {
-  identifier = module.web_alb.target_groups["web"].arn
-  type       = "elbv2"
-  }
+  traffic_source_identifier = module.web_alb.target_groups["web"].arn
+  traffic_source_type       = "elbv2"
 
   # CPU scaling
   autoscaling_group_tags = {
