@@ -1,6 +1,6 @@
 module "web_alb" {
   source  = "terraform-aws-modules/alb/aws"
-  version = "~> 9.0"
+  version = "~> 10.0"
 
   name = "three-tier-webServer-alb"
 

@@ -30,7 +30,7 @@ jobs:
 
       - name: Terraform Init & Apply
         run: |
-          terraform init --reconfigure
+          terraform init --upgrade
           terraform plan
           terraform refresh
           terraform apply -auto-approve
