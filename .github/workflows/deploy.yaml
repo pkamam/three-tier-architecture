@@ -31,7 +31,6 @@ jobs:
       - name: Terraform Init & Apply
         run: |
           terraform init --reconfigure
-          terraform destroy -auto-approve
           terraform plan
           terraform refresh
           terraform apply -auto-approve
